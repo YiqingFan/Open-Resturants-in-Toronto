@@ -3,7 +3,7 @@ IBM-Capstone
 
 As a part of the IBM Data Science program capstone project, I worked on the real datasets to get an experience of what a data scientist goes through in the real life, Main object of this project were to define business problem, using the web data through web scraping, and using Foursquare location data to compare different neighborhoods of Toronto to figure out which neighborhood is profitable for starting a new restaurant. In this project, I will go through the whole process step by step manner from problem targeting, data preparation to final analysis result. Last but not the least, I will provide my suggestion which can be leveraged by the business stakeholders to make their decisions.
 
-1. Description of the Business Problem
+## 1. Description of the Business Problem
 
 In this project, I will go through all steps to make a decision whether it is a good idea to open a Chinese restaurant.
 I analyze the neighborhoods in Toronto to identify the most profitable area to place it.
@@ -15,7 +15,7 @@ Business personnel who wants to invest or open a Chinese restaurant in Toronto.
 Freelancers who loves to have their own restaurant as a side business.
 Chinese crowd who wants to find neighborhoods with lots of option for Chinese restraurants.
 
-2. Data acquisition & cleaning:
+## 2. Data acquisition & cleaning:
 
 2.1 Data Sources
 I used (https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M) wiki page to get all the information about the neighborhoods present in Toronto. This page has the postal code, borough & the name of all the neighborhoods present in Toronto.
@@ -33,21 +33,22 @@ Thirdly, I scraped the distribution of population from Wikipedia, examining thos
 
 Fourthly, I got location data from Foursquare, by choosing 100 popular spots for each neighborhood within a radius of 1km.
 
-3. Exploratory Data Analysis
+## 3. Exploratory Data Analysis
 
 3.1 Visualization
 The next step, I used Folium Library and Leaflet Map to draw an interactive map using coordinate data.
 
-Screen Shot 2020-06-03 at 11.08.32 PM.png
+![alt text](https://github.com/YiqingFan/Open-Resturants-in-Toronto/blob/main/vis-map.png)
 3.2 Relationship between neighborhood and Chinese restaurants
 I used bar plots to identify the boroughs with densely populated Chinese restaurants.
 
-Screen Shot 2020-06-04 at 12.49.57 AM.png
+![alt_text](https://github.com/YiqingFan/Open-Resturants-in-Toronto/blob/main/boroughs.png)
 3.3 Relationship between neighborhood and Chinese population
 I analyzed the neighborhoods and identified the neighborhoods with the highest number of Chinese populations.
 
-Screen Shot 2020-06-04 at 12.51.02 AM.png
-4. Predictive Modeling
+![alt_text](https://github.com/YiqingFan/Open-Resturants-in-Toronto/blob/main/neighborhood.png)
+
+## 4. Predictive Modeling
 
 4.1 Clustering neighborhoods of Toronto
 
@@ -61,8 +62,9 @@ After analyzing using elbow method with distortion score and squared error for e
 We have total of 7 clusters such as 0,1,2,3,4,5,6. 
 We find that Cluster 4 contains Boroughs with large numbers of Chinese Restaurants. It represents opening a new Chinese restaurant in North York and Scarborough will be very competitive.
 
-Screen Shot 2020-06-04 at 12.47.49 AM.png
-5. Results
+![alt_text](https://github.com/YiqingFan/Open-Resturants-in-Toronto/blob/main/result.png)
+
+## 5. Results
 
 We have reached the end of the analysis, in this section we will document all the findings from above clustering & visualization of the dataset. In this project, we started off with the business problem of identifying a good neighborhood to open a new Chinese restaurant. To achieve that we looked into all the neighborhoods in Toronto, then analyzed the Chinese population in each neighborhood & number of Chinese restaurants in those neighborhoods to come to conclusion about which neighborhood would be a better spot. We have used variety of data sources to set up a very realistic data-analysis scenario. We have found out that —
 
