@@ -55,6 +55,7 @@ I analyzed the neighborhoods and identified the neighborhoods with the highest n
 First step in k-means clustering is to identify best K value, which is the number of clusters in a given dataset. To do so I used elbow methods on the Toronto dataset with Chinese restaurants’ percentage, aiming to do k-means cluster.
 
 ![alt_text](https://github.com/YiqingFan/Open-Resturants-in-Toronto/blob/main/elbow%20method.png)
+
 After analyzing using elbow method with distortion score and squared error for each k value, K=7 is the best value.
 
 4.2 Examining the clusters
@@ -63,6 +64,7 @@ We have total of 7 clusters such as 0,1,2,3,4,5,6.
 We find that Cluster 4 contains Boroughs with large numbers of Chinese Restaurants. It represents opening a new Chinese restaurant in North York and Scarborough will be very competitive.
 
 ![alt_text](https://github.com/YiqingFan/Open-Resturants-in-Toronto/blob/main/result.png)
+
 
 ## 5. Results
 
